@@ -1,4 +1,6 @@
+To display the user's photo in a rectangle shape, you can adjust the CSS for the `.user-image` class. Here's the updated code:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,18 +106,22 @@
       color: #fff;
     }
     .user-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
       background: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
       backdrop-filter: blur(20px); /* Apply a blur effect to the background */
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Add a shadow effect */
       color: #fff;
-      padding: 20px 0;
-      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
     }
     .user-image {
-      width: 100px;
+      width: 200px;
       height: 100px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+      border-radius: 10px;
+      margin-right: 20px;
     }
     .user-name {
       font-size: 24px;
@@ -141,14 +147,14 @@
   </ul>
 </div>
 
-<div class="user-info">
-  <img class="" src="/portfolio.github.io/img/profile.png" alt="User Image">
-  <div class="user-name">AYUSH SANGTANI</div>
-</div>
-
 <div id="home" class="section">
-  <h2>Welcome to My Portfolio</h2>
-  <p>This is the home section of my portfolio website. Here, you can find information about my projects, skills, and more.</p>
+  <div class="user-info">
+    <div class="user-text">
+      <h2>Welcome to My Portfolio</h2>
+      <p>This is the home section of my portfolio website. Here, you can find information about my projects, skills, and more.</p>
+    </div>
+    <img class="user-image" src="/portfolio.github.io/img/profile.png" alt="User Image">
+  </div>
 </div>
 
 <div id="portfolio" class="section">
@@ -166,7 +172,9 @@
     <div class="project-box">
       <div class="project">
         <img src="/portfolio.github.io/img/android.png" alt="Android App Image">
-        <div class="project-text">
+        <div class
+
+="project-text">
           <h3>Android App</h3>
           <p>This Android app helps users track their daily expenses. It's developed using Java and SQLite.</p>
         </div>
@@ -176,9 +184,7 @@
       <div class="project">
         <img src="/portfolio.github.io/img/web.png" alt="ASP.NET Project Image">
         <div class="project-text">
-          <h3
-
->ASP.NET Project</h3>
+          <h3>ASP.NET Project</h3>
           <p>This project is a web-based inventory management system developed using ASP.NET and SQL Server.</p>
         </div>
       </div>
@@ -218,3 +224,6 @@
 
 </body>
 </html>
+```
+
+In this version, the user's photo is displayed in a rectangle shape and aligned to the right side of the home section.
