@@ -1,6 +1,4 @@
-To display the user's photo in a rectangle shape, you can adjust the CSS for the `.user-image` class. Here's the updated code:
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,9 +105,8 @@ To display the user's photo in a rectangle shape, you can adjust the CSS for the
     }
     .user-info {
       display: flex;
-      flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       background: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
       backdrop-filter: blur(20px); /* Apply a blur effect to the background */
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Add a shadow effect */
@@ -119,7 +116,7 @@ To display the user's photo in a rectangle shape, you can adjust the CSS for the
     }
     .user-image {
       width: 200px;
-      height: 100px;
+      height: auto;
       border-radius: 10px;
       margin-right: 20px;
     }
@@ -171,10 +168,10 @@ To display the user's photo in a rectangle shape, you can adjust the CSS for the
     </div>
     <div class="project-box">
       <div class="project">
-        <img src="/portfolio.github.io/img/android.png" alt="Android App Image">
-        <div class
+        <img src="/portfolio.github.io/img
 
-="project-text">
+/android.png" alt="Android App Image">
+        <div class="project-text">
           <h3>Android App</h3>
           <p>This Android app helps users track their daily expenses. It's developed using Java and SQLite.</p>
         </div>
@@ -224,6 +221,3 @@ To display the user's photo in a rectangle shape, you can adjust the CSS for the
 
 </body>
 </html>
-```
-
-In this version, the user's photo is displayed in a rectangle shape and aligned to the right side of the home section.
