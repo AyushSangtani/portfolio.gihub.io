@@ -107,27 +107,24 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      background: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
-      backdrop-filter: blur(20px); /* Apply a blur effect to the background */
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Add a shadow effect */
-      color: #fff;
       padding: 20px;
-      margin-bottom: 20px;
     }
     .user-image {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
       margin-right: 20px;
     }
-    .user-name {
-      font-size: 24px;
-      font-weight: bold;
+    .user-text {
+      max-width: 50%;
     }
     @media screen and (max-width: 768px) {
       .project-box {
         width: calc(100% - 20px);
         max-width: none;
+      }
+      .user-text {
+        max-width: 100%;
       }
     }
   </style>
@@ -144,13 +141,11 @@
   </ul>
 </div>
 
-<div id="home" class="section">
-  <div class="user-info">
-    <div class="user-text">
-      <h2>Welcome to My Portfolio</h2>
-      <p>This is the home section of my portfolio website. Here, you can find information about my projects, skills, and more.</p>
-    </div>
-    <img class="user-image" src="/portfolio.github.io/img/profile.png" alt="User Image">
+<div class="user-info">
+  <img class="user-image" src="/portfolio.github.io/img/profile.png" alt="User Image">
+  <div class="user-text">
+    <h2>Welcome to My Portfolio</h2>
+    <p>This is the home section of my portfolio website. Here, you can find information about my projects, skills, and more.</p>
   </div>
 </div>
 
@@ -168,9 +163,7 @@
     </div>
     <div class="project-box">
       <div class="project">
-        <img src="/portfolio.github.io/img
-
-/android.png" alt="Android App Image">
+        <img src="/portfolio.github.io/img/android.png" alt="Android App Image">
         <div class="project-text">
           <h3>Android App</h3>
           <p>This Android app helps users track their daily expenses. It's developed using Java and SQLite.</p>
@@ -180,7 +173,9 @@
     <div class="project-box">
       <div class="project">
         <img src="/portfolio.github.io/img/web.png" alt="ASP.NET Project Image">
-        <div class="project-text">
+       
+
+ <div class="project-text">
           <h3>ASP.NET Project</h3>
           <p>This project is a web-based inventory management system developed using ASP.NET and SQL Server.</p>
         </div>
